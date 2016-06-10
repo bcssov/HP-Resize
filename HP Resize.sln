@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HP Resize Forms", "HP Resize Forms\HP Resize Forms.csproj", "{D5D0ACD5-0E3E-4644-9DC3-797C6E2F0179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HP Resize Console", "HP Resize Console\HP Resize Console.csproj", "{0F14B424-0352-420A-BB28-6FB28EEF7758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HP Resize", "HP Resize\HP Resize.csproj", "{2C88E3F7-C74A-4AAD-A595-9F73A60270D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5D0ACD5-0E3E-4644-9DC3-797C6E2F0179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D0ACD5-0E3E-4644-9DC3-797C6E2F0179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D0ACD5-0E3E-4644-9DC3-797C6E2F0179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D0ACD5-0E3E-4644-9DC3-797C6E2F0179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F14B424-0352-420A-BB28-6FB28EEF7758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F14B424-0352-420A-BB28-6FB28EEF7758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F14B424-0352-420A-BB28-6FB28EEF7758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F14B424-0352-420A-BB28-6FB28EEF7758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C88E3F7-C74A-4AAD-A595-9F73A60270D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C88E3F7-C74A-4AAD-A595-9F73A60270D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C88E3F7-C74A-4AAD-A595-9F73A60270D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C88E3F7-C74A-4AAD-A595-9F73A60270D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
