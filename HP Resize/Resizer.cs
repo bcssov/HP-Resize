@@ -4,7 +4,7 @@
 // Created          : 06-10-2016
 //
 // Last Modified By : Mario
-// Last Modified On : 06-10-2016
+// Last Modified On : 06-23-2016
 // ***********************************************************************
 // <copyright file="Class1.cs" company="">
 //     Copyright ©  2016
@@ -16,7 +16,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace HP_Resize
 {
@@ -52,9 +51,11 @@ namespace HP_Resize
         /// Gets or sets the percentage.
         /// </summary>
         /// <value>The percentage.</value>
-        public int Percentage { get; set; }
+        public int Percentage { get; private set; }
 
         #endregion Properties
+
+        #region Methods
 
         /// <summary>
         /// Resizes this instance.
@@ -63,11 +64,11 @@ namespace HP_Resize
         {
             var multiplier = Convert.ToDouble(this.Percentage) / 100d;
             var culture = new CultureInfo("en-US");
-            // could have used regex, but am too lazy            
+            // could have used regex, but am too lazy
             List<string> newContents = new List<string>();
             var contents = File.ReadAllLines(this.FilePath).ToList();
             foreach (var content in contents)
-            {                
+            {
                 if (content.Contains(".SetPosition("))
                 {
                     var values = content.Split("(".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
@@ -91,5 +92,7 @@ namespace HP_Resize
             }
             File.WriteAllLines(this.FilePath, newContents);
         }
+
+        #endregion Methods
     }
 }
